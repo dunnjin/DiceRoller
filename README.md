@@ -1,2 +1,2 @@
 # DiceRoller
-Mobile app that allows users to create and save dice rolls grouped in categories and names.
+Mobile app that allows users to create dice equations to be saved and rolled which are grouped in categories and names.

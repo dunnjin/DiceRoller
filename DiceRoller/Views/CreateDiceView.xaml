@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="DiceRoller.Views.CreateDiceView"
+             Title="Create Dice">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+                FontSize="Small"
+                Text="Category">
+            </Label>
+            <Entry 
+                Text="{Binding Category}"
+                Placeholder="Dice">
+            </Entry>
+            <Label
+                FontSize="Small"
+                Text="Name">
+            </Label>
+            <Entry 
+                Text="{Binding Name}"
+                Placeholder="Dice Roll">
+            </Entry>
+            <Label
+                FontSize="Small"
+                Text="Equation">
+            </Label>
+            <Entry 
+                Text="{Binding Equation}" 
+                Placeholder="1d20+4">
+            </Entry>
+            <Button 
+                Text="Create"
+                Command="{Binding CreateCommand}">
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
